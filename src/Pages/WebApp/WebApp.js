@@ -1,12 +1,13 @@
 import React from "react";
-import Listings from "../Listings/Entry/AppPage";
+import ListingsPage from "../Listings/ListingsPage";
 
 //browser and page routes go here
 
 function WebApp() {
   return (
     <>
-      <Listings />
+      <h1>Listings here</h1>
+      <ListingsPage />
     </>
   );
 }
