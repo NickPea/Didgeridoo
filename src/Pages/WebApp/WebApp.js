@@ -6,7 +6,6 @@ import ListingsPage from "../Listings/ListingsPage";
 function WebApp() {
   return (
     <>
-      <h1>Listings here</h1>
       <ListingsPage />
     </>
   );

@@ -1,11 +1,35 @@
 import React from "react";
+import Styled from "styled-components";
+import { Container, Col, Row } from "react-bootstrap";
+
+import SearchBar from "./SearchBar";
+import Advert from "./Advert";
 
 function MainDisplay() {
   return (
-    <div>
-      <h1>Listings go here...</h1>
-    </div>
+    <>
+      <StyleWrapper>
+        <Container>
+          <Row>
+            <Col>
+              <SearchBar />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Advert />
+            </Col>
+          </Row>
+        </Container>
+      </StyleWrapper>
+    </>
   );
 }
 
 export default MainDisplay;
+
+//styles
+const StyleWrapper = Styled.div`
+  background-color: lightgrey;
+  padding-top: 20px;
+`;
