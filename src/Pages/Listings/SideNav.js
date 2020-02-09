@@ -1,11 +1,19 @@
 import React from "react";
 import Styled from "styled-components";
+import { Container, Row, Col } from "react-bootstrap";
+import Filters from "./Filter/FilterMain";
 
 function SideNav() {
   return (
     <>
       <StyleWrapper>
-        <span>SideNav</span>
+        <Container>
+          <Row>
+            <Col>
+              <Filters />
+            </Col>
+          </Row>
+        </Container>
       </StyleWrapper>
     </>
   );
@@ -14,7 +22,8 @@ function SideNav() {
 export default SideNav;
 
 //styles
+//same top padding as maindisplay
 const StyleWrapper = Styled.div`
   background-color: darkgrey;
-  color: white;
+  padding-top: 20px; 
 `;

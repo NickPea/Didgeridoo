@@ -1,7 +1,7 @@
 import React from "react";
 import Styled from "styled-components";
 import { Container, Col, Row, Card } from "react-bootstrap";
-import NoImage from "./noImg_2.jpg";
+import NoImage from "./Assets/noImg_2.jpg";
 
 const StyledCard = Styled.div`
   margin-bottom: 15px;
@@ -16,13 +16,14 @@ function Advert() {
           <Col sm={6} md={4}>
             <StyledCard>
               <Card>
+                <Card.Header>House</Card.Header>
                 <Card.Img variant="top" src={NoImage} />
-                <Card.ImgOverlay>
-                  <Card.Subtitle>House</Card.Subtitle>
-                </Card.ImgOverlay>
                 <Card.Body>
                   <Card.Title>$190,000</Card.Title>
-                  <Card.Text>34 Sea Breeze Ave, golden beach 4004</Card.Text>
+                  <hr />
+                  <Card.Subtitle>
+                    34 Sea Breeze Ave, Golden Beach Vic 4001
+                  </Card.Subtitle>
                 </Card.Body>
               </Card>
             </StyledCard>

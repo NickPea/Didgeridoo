@@ -29,6 +29,7 @@ function MainDisplay() {
 export default MainDisplay;
 
 //styles
+//same top padding as sidenav
 const StyleWrapper = Styled.div`
   background-color: lightgrey;
   padding-top: 20px;
