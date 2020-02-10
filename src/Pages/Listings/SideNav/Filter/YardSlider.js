@@ -14,27 +14,28 @@ const marks = [
   { value: 10 }
 ];
 
-function BedsSlider() {
-  const [noBeds, setnoBeds] = useState([1, 10]);
+function YardSize() {
+  const [noBeds, setnoBeds] = useState();
   const handleChange = (event, newValue) => setnoBeds(newValue);
   return (
     <>
-      <Typography id="noBeds" gutterBottom>
-        Beds:
+      <Typography id="landSize" gutterBottom style={{ textAlign: "center" }}>
+        Min. Yard Size (m2):
       </Typography>
       <Slider
         value={noBeds}
         onChange={handleChange}
-        defaultValue={3}
-        aria-labelledby="beds-slider"
+        aria-labelledby="kitchens-slider"
         valueLabelDisplay="auto"
-        step={1}
-        marks={marks}
-        min={1}
-        max={10}
+        valueLabelFormat={value => `${value}+`}
+        step={100}
+        marks
+        min={0}
+        max={5000}
+        defaultValue={0}
       />
     </>
   );
 }
 
-export default BedsSlider;
+export default YardSize;

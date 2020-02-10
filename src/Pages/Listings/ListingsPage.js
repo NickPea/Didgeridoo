@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TopNav from "./TopNav";
-import SideNav from "./SideNav";
+import SideNav from "./SideNav/SideNav";
 import MainDisplay from "./MainDisplay";
 
 function ListingsPage() {

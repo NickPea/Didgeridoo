@@ -7,10 +7,13 @@ function TopNav() {
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="#home">
           <h4>
-            Didgeridoo
-            <h6 style={{ fontSize: "0.6rem", textAlign: "right" }}>
-              Aussie Property Sales&trade;
-            </h6>
+            Didgeridoo&trade;
+            <div style={{ fontSize: "0.6rem", textAlign: "right" }}>
+              Australian Property Sales{" "}
+              <b>
+                <u>For Everyone.</u>
+              </b>
+            </div>
           </h4>
         </Navbar.Brand>
         <Nav className="mr-auto">

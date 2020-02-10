@@ -14,27 +14,27 @@ const marks = [
   { value: 10 }
 ];
 
-function BathroomsSlider() {
-  const [noBeds, setnoBeds] = useState([1, 10]);
+function LandSlider() {
+  const [noBeds, setnoBeds] = useState();
   const handleChange = (event, newValue) => setnoBeds(newValue);
   return (
     <>
-      <Typography id="noBathrooms" gutterBottom>
-        Bathrooms:
+      <Typography id="landSize" gutterBottom style={{ textAlign: "center" }}>
+        Min Land Size (m2):
       </Typography>
       <Slider
         value={noBeds}
         onChange={handleChange}
-        defaultValue={3}
-        aria-labelledby="bathrooms-slider"
+        defaultValue={0}
+        aria-labelledby="kitchens-slider"
         valueLabelDisplay="auto"
-        step={1}
-        marks={marks}
-        min={1}
-        max={10}
+        valueLabelFormat={value => `${value}+`}
+        step={100}
+        min={0}
+        max={100000}
       />
     </>
   );
 }
 
-export default BathroomsSlider;
+export default LandSlider;

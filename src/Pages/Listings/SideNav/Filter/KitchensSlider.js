@@ -19,7 +19,7 @@ function KitchensSlider() {
   const handleChange = (event, newValue) => setnoBeds(newValue);
   return (
     <>
-      <Typography id="noKitchens" gutterBottom>
+      <Typography id="noKitchens" gutterBottom style={{ textAlign: "center" }}>
         Kitchens:
       </Typography>
       <Slider
