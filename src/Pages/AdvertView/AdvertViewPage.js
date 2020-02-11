@@ -1,7 +1,11 @@
 import React from "react";
-import ImageViewer from "./AdvertExplorer";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import AdvertExplorer from "./AdvertExplorer";
+import { Container, Row, Col } from "react-bootstrap";
+import LeadIn from "./LeadIn";
+import Description from "./Description";
+import ImageViewer from "./ImageViewer";
+import GoogleMap from "./GoogleMap";
+import Contact from "./Contact";
+import LoanComBank from "./LoanComBank";
 
 function AdvertViewPage() {
   return (
@@ -10,12 +14,23 @@ function AdvertViewPage() {
         <Row>
           <Col>
             <br />
-            <Card>
-              <Card.Header>{"Property Address"}</Card.Header>
-              <Card.Body>
-                <AdvertExplorer />
-              </Card.Body>
-            </Card>
+            <ImageViewer />
+            <hr />
+            <Row>
+              <Col md={6}>
+                <LeadIn />
+                <hr />
+                <LoanComBank />
+              </Col>
+              <Col>
+                <GoogleMap />
+              </Col>
+            </Row>
+            <hr />
+            <Description />
+            <hr />
+            <Contact />
+            <hr />
           </Col>
         </Row>
       </Container>
