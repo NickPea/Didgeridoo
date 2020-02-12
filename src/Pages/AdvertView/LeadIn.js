@@ -14,7 +14,7 @@ export default function LeadIn() {
           <Row>
             <Col>
               <h4 style={addressStyle}>
-                {"34 Sea Breeze Ave, Golden Beach VIC 3851"}
+                {"34 Noonan Ave, Paradise Beach VIC 4001"}
               </h4>
               <div style={iconWrapperStyle}>
                 <i style={iconStyle}>{"House "}</i>
@@ -39,7 +39,7 @@ export default function LeadIn() {
           </Row>
           <Row>
             <Col>
-              <h5 style={priceStyle}>{"$190,000"}</h5>
+              <h5 style={priceStyle}>{"$490,000"}</h5>
             </Col>
           </Row>
         </Col>

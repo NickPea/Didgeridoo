@@ -12,7 +12,9 @@ export default function GoogleMap() {
         }}
         src={`https://www.google.com/maps/embed/v1/place?q=${
           /*Address*/ "earth" /*Address */
-        }&key="YOUR-GOOGLE-API-KEY-HERE"&maptype=roadmap`}></iframe>
+        }&key=${
+          process.env.REACT_APP_GOOGLE_API_KEY
+        }&maptype=roadmap`}></iframe>
     </div>
   );
 }
