@@ -5,7 +5,7 @@ import Description from "./Description";
 import ImageViewer from "./ImageViewer";
 import GoogleMap from "./GoogleMap";
 import Contact from "./Contact";
-import LoanComBank from "./LoanComBank";
+import CommercialAd from "./CommericalAd";
 
 function AdvertViewPage() {
   return (
@@ -20,7 +20,7 @@ function AdvertViewPage() {
               <Col md={6}>
                 <LeadIn />
                 <hr />
-                <LoanComBank />
+                <CommercialAd />
               </Col>
               <Col>
                 <GoogleMap />
